@@ -273,7 +273,7 @@ void DrawUtils::drawPNG(uint32_t x, uint32_t y, const uint8_t *data) {
 bool DrawUtils::initFont() {
     void *font    = nullptr;
     uint32_t size = 0;
-    OSGetSharedData(OS_SHAREDDATATYPE_FONT_STANDARD, 0, &font, &size);
+    OSGetSharedData(OS_SHAREDDATATYPE_FONT_CHINESE, 0, &font, &size);
 
     if (font && size) {
         pFont.xScale = 20;
